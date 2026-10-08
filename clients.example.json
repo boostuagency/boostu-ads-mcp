@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Bakkerij Janssens",
+    "aliases": ["janssens", "bakkerij j"],
+    "owner": "alice@example.com",
+    "google_ads": ["123-456-7890"],
+    "meta": ["act_1234567890"],
+    "ga4": ["345678901"],
+    "search_console": ["sc-domain:bakkerijjanssens.be"],
+    "linkedin": [],
+    "tiktok": [],
+    "microsoft_ads": [],
+    "targets": { "cpa": 25, "roas": 4, "monthly_budget": 5000 },
+    "notes": "Focus op webshop, seizoenspiek in december."
+  }
+]

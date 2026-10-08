@@ -1,0 +1,76 @@
+{
+  "name": "boostu-ads-mcp",
+  "version": "1.0.0",
+  "mcpName": "io.github.boostuagency/boostu-ads-mcp",
+  "description": "Open-source MCP server for Google Ads, Meta Ads, GA4, Search Console, LinkedIn Ads, TikTok Ads and Microsoft Ads. Report, audit and optimise every ad account from Claude and other AI assistants.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "boostu-ads-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "dev:http": "tsx src/cli.ts --http",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "google-ads",
+    "google-ads-mcp",
+    "meta-ads",
+    "facebook-ads",
+    "ga4",
+    "google-analytics",
+    "search-console",
+    "linkedin-ads",
+    "tiktok-ads",
+    "microsoft-ads",
+    "ppc",
+    "claude",
+    "claude-mcp",
+    "anthropic",
+    "boostu"
+  ],
+  "author": "BoostU Agency <nick@boostu.be> (https://boostu.be)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boostuagency/boostu-ads-mcp.git"
+  },
+  "homepage": "https://github.com/boostuagency/boostu-ads-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/boostuagency/boostu-ads-mcp/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

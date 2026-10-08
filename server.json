@@ -1,0 +1,101 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.boostuagency/boostu-ads-mcp",
+  "description": "Google Ads, Meta Ads, GA4, Search Console, LinkedIn, TikTok and Microsoft Ads in one MCP server.",
+  "repository": {
+    "url": "https://github.com/boostuagency/boostu-ads-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "boostu-ads-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_OAUTH_CLIENT_ID",
+          "description": "Google OAuth client id (Google Ads, GA4, Search Console)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_OAUTH_CLIENT_SECRET",
+          "description": "Google OAuth client secret",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_REFRESH_TOKEN",
+          "description": "Refresh token of the Google user with access to your accounts",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GOOGLE_ADS_LOGIN_CUSTOMER_ID",
+          "description": "Google Ads manager (MCC) id used as login-customer-id",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "META_ACCESS_TOKEN",
+          "description": "Meta Marketing API token (system user recommended)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "META_APP_SECRET",
+          "description": "Meta app secret for appsecret_proof",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "META_BUSINESS_ID",
+          "description": "Meta Business Manager id (adds owned and client ad accounts)",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "LINKEDIN_ACCESS_TOKEN",
+          "description": "LinkedIn Marketing API access token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "TIKTOK_ACCESS_TOKEN",
+          "description": "TikTok Business API access token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MICROSOFT_ADS_DEVELOPER_TOKEN",
+          "description": "Microsoft Advertising developer token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MICROSOFT_ADS_CLIENT_ID",
+          "description": "Microsoft Entra app (client) id",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MICROSOFT_ADS_REFRESH_TOKEN",
+          "description": "Microsoft Advertising refresh token",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "WRITE_MODE",
+          "description": "confirm (default) or off to hide all write tools",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
